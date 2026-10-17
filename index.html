@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Práctica 8. Punto de luz conmutado (montaje con puentes). Descripción</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+    <header>
+        <h1>Instalaciones eléctricas interiores</h1>
+        <p>Práctica 8. Punto de luz conmutado (montaje con puentes). Descripción</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li class="active"><a href="index.html">Práctica 8 (Conmutado con puentes)</a></li>
+            <li><a href="rubrica_8.html">Rúbrica evaluación</a></li>
+            <li><a href="esquema_8.html">Esquema y montaje</a></li>
+            <li><a href="simulacion_8.html">Simulación</a></li>
+            <li><a href="presupuesto.html">Presupuesto</a></li>
+            <li><a href="glosario.html">Glosario</a></li>
+            <li><a href="prl.html">Seguridad y PRL</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+
+        <h2>8.- Punto de luz conmutado con montaje por puentes y bases de enchufe</h2>
+
+        <div class="section">
+            <h3 class="section-header">1. Descripción de la práctica</h3>
+            <p>En un dormitorio, el cliente quiere encender la luz desde la entrada y desde la cama, y dispone de una <strong>base de enchufe junto a cada conmutador</strong> y otra en la pared central.
+Se aprovecha que la fase y el neutro llegan a las bases de enchufe para alimentar los conmutadores mediante <strong>puentes</strong> dentro de la caja de mecanismo doble.
+Como técnico/a en formación, deberás interpretar el plano, ejecutar la canalización (canal protectora y tubo), cablear el circuito, comprobar su funcionamiento y reproducirlo en un simulador eléctrico.</p>
+
+            <h3 class="section-header">2. Requisitos funcionales</h3>
+            <p><strong>2.1.- Alimentación:</strong> Fase (F), neutro (N) y protección (T) llegan desde la caja de registro a las tres bases de enchufe.</p>
+            <p><strong>2.2.- Puentes:</strong> En cada caja doble, desde los bornes de la base de enchufe se puentea la <strong>fase a una salida</strong> del conmutador y el <strong>neutro a la otra salida</strong>.</p>
+            <p><strong>2.3.- Lámpara:</strong> La lámpara L se conecta entre el <strong>común de C1</strong> y el <strong>común de C2</strong>. Cada conmutador lleva a su lado de la lámpara la fase o el neutro.</p>
+            <p><strong>2.4.- Funcionamiento:</strong> La lámpara se enciende cuando los conmutadores están en <strong>posiciones distintas</strong> (uno entrega fase y el otro neutro) y se apaga cuando están en la misma (los dos en fase o los dos en neutro). Cualquier maniobra en uno de ellos cambia el estado de la lámpara.</p>
+            <p><strong>2.5.- Bases de enchufe:</strong> Las tres bases tienen tensión permanente, independientemente de la posición de los conmutadores.</p>
+
+            <h3 class="section-header">3. Material suministrado / recursos</h3>
+            <ul>
+                <li>Panel didáctico de montaje.</li>
+                <li>1 caja de registro con regleta (F, N, T).</li>
+                <li>2 cajas de mecanismo dobles, cada una con un conmutador (C1 / C2) y una base de enchufe 16 A con toma de tierra.</li>
+                <li>1 base de enchufe 16 A con toma de tierra de superficie (central).</li>
+                <li>1 portalámparas (L) con lámpara.</li>
+                <li>Canal protectora con accesorios de ángulo, y tubo de PVC de 16 mm con grapas.</li>
+                <li>Conductores H07V-K de 1,5 mm² y 2,5 mm² en colores normalizados (marrón/negro/gris fase y retornos; azul neutro; verde-amarillo protección).</li>
+                <li>Herramientas aisladas, pelacables, polímetro, sierra o ingletadora manual para la canal.</li>
+                <li>Simulador eléctrico (CADe_SIMU, Falstad o similar).</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h3 class="section-header">4. Justificación</h3>
+            <p>Esta práctica presenta una variante del circuito conmutado distinta del montaje corto de la práctica 7. Permite comprender:</p>
+            <ul class="list-indented">
+                <li>La realización de <strong>puentes</strong> entre mecanismos alojados en una misma caja doble.</li>
+                <li>Un circuito conmutado en el que los conmutadores entregan fase o neutro a cada extremo de la lámpara.</li>
+                <li>Las ventajas (aprovechamiento de las bases de enchufe) y los <strong>inconvenientes de seguridad</strong> de este montaje frente al conmutado convencional.</li>
+                <li>La convivencia de bases de enchufe y alumbrado en una misma estancia, y la ejecución de canal protectora con ángulos.</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h3 class="section-header">5. Contexto</h3>
+            <table>
+                <thead><tr><th>Aspecto</th><th>Detalle</th></tr></thead>
+                <tbody>
+                    <tr><td><strong>Público Objetivo</strong></td><td>1.º CFGM Instalaciones Eléctricas y Automáticas.</td></tr>
+                    <tr><td><strong>Módulo Profesional</strong></td><td>0235. Instalaciones eléctricas interiores.</td></tr>
+                    <tr><td><strong>Duración Estimada</strong></td><td>6–8 horas (teoría + práctica + simulación).</td></tr>
+                    <tr><td><strong>Espacio y Recursos</strong></td><td>Aula-taller con paneles de montaje, aula de informática con simulador eléctrico.</td></tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="section">
+            <h3 class="section-header">6. Resultado de Aprendizaje y Criterios de Evaluación</h3>
+            <p><strong>RA1.</strong> Monta la instalación eléctrica de un local de vivienda, analizando el funcionamiento de sus elementos y aplicando la normativa.</p>
+            <table>
+                <thead><tr><th>Código</th><th>Criterio de Evaluación (CE)</th></tr></thead>
+                <tbody>
+                    <tr><td><strong>CE 1.1</strong></td><td>Interpreta los esquemas y la documentación técnica de la instalación (simulación).</td></tr>
+                    <tr><td><strong>CE 1.4</strong></td><td>Monta los circuitos y comprueba su correcto funcionamiento.</td></tr>
+                    <tr><td><strong>CE 1.5</strong></td><td>Ejecuta las canalizaciones, cajas de registro y cajas de mecanismos con calidad.</td></tr>
+                    <tr><td><strong>CE 1.6</strong></td><td>Realiza las conexiones de conductores y mecanismos de forma firme y segura.</td></tr>
+                </tbody>
+            </table>
+            <p>Referencia curricular: <a href="https://www.juntadeandalucia.es/boja/2009/164/1" target="_blank" rel="noopener noreferrer">Orden de 7 de julio de 2009 (BOJA) ↗</a>. Adaptar a la programación del departamento y a la normativa vigente.</p>
+        </div>
+
+        <div class="section">
+            <h3 class="section-header">7. Metodología y Métodos de Enseñanza</h3>
+            <p><strong>Metodología:</strong> Activa, práctica y competencial, basada en Aprendizaje Basado en Retos: interpretar, montar, verificar y simular el circuito.</p>
+            <p><strong>Métodos Concretos:</strong></p>
+            <ul class="list-indented">
+                <li>Demostración guiada (realización de puentes en la caja doble) + práctica autónoma.</li>
+                <li>Trabajo manipulativo (canal protectora, tubo, cableado, puentes y conexión de mecanismos).</li>
+                <li>Simulación y comparación con el conmutado en montaje corto (práctica 7).</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h3 class="section-header">8. Actividades de Aprendizaje</h3>
+            <table>
+                <thead><tr><th>Fase</th><th>Actividad</th><th>CE</th></tr></thead>
+                <tbody>
+                    <tr><td><strong>Teoría</strong> (60 min)</td><td>Conmutado por puentes: análisis de los dos esquemas eléctricos del plano, tabla de funcionamiento y riesgos del montaje.</td><td>CE 1.1</td></tr>
+                    <tr><td><strong>Canalización</strong> (120 min)</td><td>Cajas dobles, base central y caja de registro; canal protectora con ángulos y tubo hasta la lámpara.</td><td>CE 1.5</td></tr>
+                    <tr><td><strong>Cableado y conexión</strong> (120 min)</td><td>Alimentación de las bases, puentes a los conmutadores y conexión de la lámpara entre comunes, <strong>sin tensión</strong>.</td><td>CE 1.6</td></tr>
+                    <tr><td><strong>Prueba</strong> (30 min)</td><td>Revisión del docente, puesta en tensión autorizada, prueba de la tabla de funcionamiento y comprobación de tensión en las bases.</td><td>CE 1.4</td></tr>
+                    <tr><td><strong>Simulación</strong> (60 min)</td><td>Reproducción del circuito y prueba de las cuatro combinaciones de C1 y C2.</td><td>CE 1.1</td></tr>
+                    <tr><td><strong>Final</strong> (30 min)</td><td>Grabación y entrega de los vídeos (montaje y simulación).</td><td>CE 1.1, 1.4</td></tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="section">
+            <h3 class="section-header">9. Agrupamientos</h3>
+            <ul class="list-indented">
+                <li><strong>Individual:</strong> Simulación y vídeo explicativo.</li>
+                <li><strong>Parejas:</strong> Montaje físico (fomenta la cooperación y la revisión mutua).</li>
+                <li><strong>Gran Grupo:</strong> Debate sobre ventajas e inconvenientes del montaje por puentes frente al montaje corto.</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h3 class="section-header">10. Atención a la Diversidad e Inclusión</h3>
+            <ul class="list-indented">
+                <li>Uso de <strong>material visual ampliado</strong> y esquemas en colores.</li>
+                <li>Uso de <strong>simuladores</strong> para el alumnado con dificultades motrices.</li>
+                <li><strong>Andamiaje progresivo</strong> en la dificultad:
+                    <ul>
+                        <li>Nivel Básico: Montaje según el plano y comprobación de la tabla de funcionamiento.</li>
+                        <li>Nivel Avanzado: Redibujar el circuito como conmutado convencional manteniendo las tres bases y comparar el número de conductores por canalización.</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h3 class="section-header">11. Evaluación</h3>
+            <h4>Criterios de Evaluación:</h4>
+            <ol>
+                <li>Funcionamiento del circuito (CE 1.4).</li>
+                <li>Calidad de las canalizaciones: canal protectora y tubo (CE 1.5).</li>
+                <li>Calidad y seguridad de las conexiones y puentes (CE 1.6).</li>
+                <li>Simulación del circuito (CE 1.1).</li>
+            </ol>
+            <h4>Instrumentos / Técnicas:</h4>
+            <ul class="list-indented">
+                <li>Rúbrica de desempeño práctico.</li>
+                <li>Lista de cotejo (checklist) para el montaje.</li>
+                <li>Observación directa del trabajo en el taller.</li>
+                <li>Vídeos de montaje y simulación entregados por el alumnado.</li>
+                <li>Autoevaluación: ¿por qué con la lámpara apagada puede quedar tensión en el portalámparas?</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h3 class="section-header">12. Recursos y Materiales</h3>
+            <ul class="list-indented">
+                <li><strong>Hardware:</strong> Panel didáctico, caja de registro con regleta, 2 cajas dobles, 2 conmutadores, 3 bases de enchufe 16 A, portalámparas, lámpara, canal protectora, tubo PVC, conductores H07V-K, polímetro.</li>
+                <li><strong>Software:</strong> Simulador eléctrico (CADe_SIMU, <a href="https://www.falstad.com/circuit/" target="_blank" rel="noopener noreferrer">Falstad</a> o similar).</li>
+                <li><strong>Documentación:</strong> Esquemas eléctricos y esquema de montaje de la práctica, REBT, ITC-BT-21 e ITC-BT-25.</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h3 class="section-header">13. Seguridad y Normativa</h3>
+            <ul class="list-indented">
+                <li>Montaje y modificaciones <strong>siempre sin tensión</strong>; aplicación de las <strong>cinco reglas de oro</strong>.</li>
+                <li>Prohibido energizar el panel sin la <strong>revisión del docente</strong>.</li>
+                <li><strong>Atención:</strong> en este montaje, con la lámpara apagada y los dos conmutadores en la posición de fase, <strong>los dos bornes del portalámparas quedan con tensión</strong>. Antes de cambiar la lámpara o manipular el portalámparas hay que <strong>desconectar la protección del circuito</strong>.</li>
+                <li>Los conmutadores maniobran también el neutro; por eso este montaje tiene un uso didáctico y en la instalación real de una vivienda se prefiere el conmutado convencional (práctica 7), en el que solo se corta la fase.</li>
+                <li>En una vivienda real, alumbrado (C1, 1,5 mm², PIA 10 A) y bases de enchufe (C2, 2,5 mm², PIA 16 A) son circuitos independientes según la ITC-BT-25.</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h3 class="section-header">14. Entregables</h3>
+            <h4>Obligatorio</h4>
+            <ul class="list-indented">
+                <li>Realiza el <strong>vídeo del montaje</strong> en el taller (3–5 min).</li>
+                <li>Realiza la <strong>simulación del circuito</strong> y graba un vídeo de su funcionamiento (2–4 min).</li>
+            </ul>
+            <h4>Mejora del circuito (trabajo adicional)</h4>
+            <ol>
+                <li>Elaborar una tabla comparativa entre el <strong>conmutado por puentes</strong> y el <strong>conmutado en montaje corto</strong>: conductores por canalización, estado de los bornes de la lámpara apagada y adecuación a la normativa.</li>
+            </ol>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2026 CFGM Instalaciones Eléctricas y Automáticas · Módulo 0235 Instalaciones eléctricas interiores</p>
+    </footer>
+
+</body>
+</html>
